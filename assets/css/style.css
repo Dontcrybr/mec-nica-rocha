@@ -422,8 +422,81 @@ p {
 }
 
 @media (max-width: 767px) {
+    
+    body, html {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .contatos{
+        justify-items: center;
+    }
+
+    .info-contato {
+        display: grid;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+    
+    .contato-item {
+        padding: 10px;
+        text-align: center;
+        flex: 1;
+    }
+    
+    .contato-item {
+        border-bottom: 1px solid #fff;
+    }
+
+    .contato-item:not(:last-child) {
+        border-right: 1px solid #fff;
+        border-right: none;
+    }    
+    
+    .contato-item a {
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    .contato-item a:hover {
+        text-decoration: underline;
+    }
+
+    div .col-3 h2{
+        margin-right: 25px;
+    }
+
+    .categorias h2{
+        text-align: center;
+        margin-right: 25px;
+    }
+
+    .contatos h2{
+        text-align: center;
+        margin-right: 25px;
+    }
+
+    .serviços h2{
+        text-align: center;
+        margin-right: 25px;
+    }
+
     .navbar {
         flex-direction: row;
+    }
+
+    .col-3 img{
+        width: 200px;
+        height: 140px;
+        
+    }
+
+    .col-3 p {
+        text-align:center;
     }
 
     .navbar ul {
